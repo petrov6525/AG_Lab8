@@ -1,0 +1,18 @@
+<h1>Task 2</h1>
+
+<div *ngIf="selectedItem">
+    <input type="text" [(ngModel)]="items[index]">
+    <button (click)="SaveClick(items[index])">Save</button>
+</div>
+
+<div [hidden]="!isAdd">
+    <input type="text" [(ngModel)]="item">
+    <button (click)="AddClick(item)">Add</button>
+</div>
+
+<div>
+    <h1>Famous people:</h1>
+    <div [class.active]="item===selectedItem" class="div" *ngFor="let item of items;let i=index" (click)="OnSelect(item,i)">
+        {{item}}
+    </div>
+</div>

@@ -1,0 +1,14 @@
+.div:hover{
+    background-color: black;
+    color: aquamarine;
+}
+
+.div{
+    width: fit-content;
+    cursor: pointer;
+}
+
+.active{
+    background-color: black;
+    color: aquamarine;
+}
